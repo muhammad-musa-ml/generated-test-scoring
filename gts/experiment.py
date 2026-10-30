@@ -49,9 +49,9 @@ def run(subjects=SUBJECTS, seeds: int = SEEDS, budgets=BUDGETS) -> dict:
                 for metric_name, metric in METRICS.items():
                     values = [metric(analysis, _suite(subject, generator, n, seed)) for seed in range(seeds)]
                     per.setdefault((metric_name, generator, n), []).append(mean(values))
-        pair = generators.hand_pair(subject)
+        pair = generators.fixed_pair(subject)
         for metric_name, metric in METRICS.items():
-            per.setdefault((metric_name, "hand_pair", 2), []).append(metric(analysis, pair))
+            per.setdefault((metric_name, "fixed_pair", 2), []).append(metric(analysis, pair))
 
     score_rows = []
     for (metric_name, generator, n), values in sorted(per.items()):
@@ -63,7 +63,7 @@ def run(subjects=SUBJECTS, seeds: int = SEEDS, budgets=BUDGETS) -> dict:
         baselines = (
             ("random, same number of cases", "random", budget),
             (f"random, {BASELINE_FACTOR}x the cases", "random", budget * BASELINE_FACTOR),
-            ("two hand-written cases (min and max)", "hand_pair", 2),
+            ("two fixed cases (min and max)", "fixed_pair", 2),
         )
         for metric_name in METRICS:
             candidate = per[(metric_name, "boundary", budget)]

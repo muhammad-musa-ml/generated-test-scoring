@@ -1,19 +1,19 @@
 metric,boundary_cases,baseline,baseline_mean,boundary_mean,relative_gain,ci95_low,ci95_high
 mutation_score,4,"random, same number of cases",0.4119,0.5082,23.4,7.8,46.4
 mutation_score,4,"random, 4x the cases",0.612,0.5082,-17.0,-31.8,-1.2
-mutation_score,4,two hand-written cases (min and max),0.3702,0.5082,37.3,15.6,80.3
+mutation_score,4,two fixed cases (min and max),0.3702,0.5082,37.3,15.6,80.3
 useful_case_rate,4,"random, same number of cases",0.8097,0.8266,2.1,-9.0,20.5
 useful_case_rate,4,"random, 4x the cases",0.8071,0.8266,2.4,-9.1,21.9
-useful_case_rate,4,two hand-written cases (min and max),0.8,0.8266,3.3,-15.6,34.8
+useful_case_rate,4,two fixed cases (min and max),0.8,0.8266,3.3,-15.6,34.8
 mutation_score,8,"random, same number of cases",0.5188,0.731,40.9,21.1,72.6
 mutation_score,8,"random, 4x the cases",0.708,0.731,3.2,-13.1,21.6
-mutation_score,8,two hand-written cases (min and max),0.3702,0.731,97.5,59.7,178.9
+mutation_score,8,two fixed cases (min and max),0.3702,0.731,97.5,59.7,178.9
 useful_case_rate,8,"random, same number of cases",0.809,0.8239,1.8,-10.1,21.1
 useful_case_rate,8,"random, 4x the cases",0.8095,0.8239,1.8,-10.1,21.2
-useful_case_rate,8,two hand-written cases (min and max),0.8,0.8239,3.0,-15.8,35.0
+useful_case_rate,8,two fixed cases (min and max),0.8,0.8239,3.0,-15.8,35.0
 mutation_score,16,"random, same number of cases",0.612,0.8783,43.5,19.6,84.8
 mutation_score,16,"random, 4x the cases",0.8281,0.8783,6.1,-9.5,22.3
-mutation_score,16,two hand-written cases (min and max),0.3702,0.8783,137.3,78.1,268.8
+mutation_score,16,two fixed cases (min and max),0.3702,0.8783,137.3,78.1,268.8
 useful_case_rate,16,"random, same number of cases",0.8071,0.8372,3.7,-4.0,19.8
 useful_case_rate,16,"random, 4x the cases",0.8088,0.8372,3.5,-4.2,19.6
-useful_case_rate,16,two hand-written cases (min and max),0.8,0.8372,4.6,-10.3,32.9
+useful_case_rate,16,two fixed cases (min and max),0.8,0.8372,4.6,-10.3,32.9

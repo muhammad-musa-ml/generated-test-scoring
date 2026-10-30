@@ -4,7 +4,7 @@ import random
 import pytest
 
 from conftest import tiny
-from gts.generators import boundary_inputs, boundary_values, domain_points, hand_pair, random_inputs
+from gts.generators import boundary_inputs, boundary_values, domain_points, fixed_pair, random_inputs
 from gts.subjects import SUBJECTS, Subject
 
 BY_NAME = {s.name: s for s in SUBJECTS}
@@ -74,6 +74,6 @@ def test_when_the_budget_exceeds_the_candidates_the_rest_comes_from_the_wider_do
     assert set(product(*boundary_values(subject))) <= set(picked)
 
 
-def test_the_hand_written_pair_is_the_minimum_and_the_maximum():
-    assert hand_pair(BY_NAME["shipping_fee"]) == [(0, False), (60, True)]
-    assert hand_pair(BY_NAME["clamp5"]) == [(-20,), (20,)]
+def test_the_fixed_pair_is_the_minimum_and_the_maximum():
+    assert fixed_pair(BY_NAME["shipping_fee"]) == [(0, False), (60, True)]
+    assert fixed_pair(BY_NAME["clamp5"]) == [(-20,), (20,)]

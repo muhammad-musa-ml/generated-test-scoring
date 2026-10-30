@@ -4,7 +4,7 @@ mutation_score,boundary,8,0.731
 mutation_score,boundary,16,0.8783
 mutation_score,boundary,32,0.9276
 mutation_score,boundary,64,0.9559
-mutation_score,hand_pair,2,0.3702
+mutation_score,fixed_pair,2,0.3702
 mutation_score,random,4,0.4119
 mutation_score,random,8,0.5188
 mutation_score,random,16,0.612
@@ -15,7 +15,7 @@ useful_case_rate,boundary,8,0.8239
 useful_case_rate,boundary,16,0.8372
 useful_case_rate,boundary,32,0.8247
 useful_case_rate,boundary,64,0.8138
-useful_case_rate,hand_pair,2,0.8
+useful_case_rate,fixed_pair,2,0.8
 useful_case_rate,random,4,0.8097
 useful_case_rate,random,8,0.809
 useful_case_rate,random,16,0.8071

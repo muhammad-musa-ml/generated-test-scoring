@@ -3,8 +3,8 @@
 random_inputs     n inputs drawn uniformly from the whole domain, ignoring the spec.
 boundary_inputs   n inputs drawn from the spec's boundary values: each stated threshold t as t-1, t and
                   t+1, plus the smallest and largest value of every parameter.
-hand_pair         the same two inputs every time: all parameters at their smallest value, then all at
-                  their largest. It stands for a tester who writes a minimum case and a maximum case.
+fixed_pair        the same two inputs every time: all parameters at their smallest value, then all at
+                  their largest. A fixed rule, not tests that anyone wrote.
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def boundary_inputs(subject, n: int, rng: random.Random) -> list:
     return candidates + rng.sample(rest, min(n - len(candidates), len(rest)))
 
 
-def hand_pair(subject) -> list:
+def fixed_pair(subject) -> list:
     low = tuple(values[0] for _, values in subject.params)
     high = tuple(values[-1] for _, values in subject.params)
     return [low, high]

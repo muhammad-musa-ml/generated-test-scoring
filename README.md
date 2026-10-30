@@ -34,12 +34,12 @@ Each cell is the mean over 10 subjects of the mean over 200 seeds. The boundary 
 |---|---|---|---|---|
 | mutation score | random, 8 cases | 0.519 | 0.731 | +40.9% (21.1 to 72.6) |
 | mutation score | random, 32 cases | 0.708 | 0.731 | +3.2% (-13.1 to 21.6) |
-| mutation score | two hand-written cases | 0.370 | 0.731 | +97.5% (59.7 to 178.9) |
+| mutation score | two fixed cases (min and max) | 0.370 | 0.731 | +97.5% (59.7 to 178.9) |
 | useful-case rate | random, 8 cases | 0.809 | 0.824 | +1.8% (-10.1 to 21.1) |
 | useful-case rate | random, 32 cases | 0.810 | 0.824 | +1.8% (-10.1 to 21.2) |
-| useful-case rate | two hand-written cases | 0.800 | 0.824 | +3.0% (-15.8 to 35.0) |
+| useful-case rate | two fixed cases (min and max) | 0.800 | 0.824 | +3.0% (-15.8 to 35.0) |
 
-The same 8 boundary cases are about twice as good as two hand-written cases, 41% better than 8 random
+The same 8 boundary cases are about twice as good as two fixed cases (min and max), 41% better than 8 random
 cases, 3% better than 32 random cases (an interval that includes zero), and 2% better on the share of
 useful cases. Each of those is a true statement about the same suites, and only the first one reads as a
 large improvement. The files in `results/` also hold the 4-case and 16-case rows; at 4 boundary cases the

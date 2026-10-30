@@ -12,11 +12,11 @@ def test_a_small_run_is_repeatable_and_has_the_expected_shape():
     # 2 metrics x 3 baselines per budget
     assert len(first["gains"]) == 2 * 3
     assert {row["baseline"] for row in first["gains"]} == {
-        "random, same number of cases", "random, 4x the cases", "two hand-written cases (min and max)",
+        "random, same number of cases", "random, 4x the cases", "two fixed cases (min and max)",
     }
     # the sizes scored: the budget, 4x the budget (random baseline), and the fixed pair
     assert {(r["generator"], r["cases"]) for r in first["scores"]} == {
-        ("random", 4), ("random", 16), ("boundary", 4), ("boundary", 16), ("hand_pair", 2),
+        ("random", 4), ("random", 16), ("boundary", 4), ("boundary", 16), ("fixed_pair", 2),
     }
 
 
