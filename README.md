@@ -28,7 +28,9 @@ score changes.
 
 ## Result
 
-Each cell is the mean over 10 subjects of the mean over 200 seeds. The boundary suites have 8 cases:
+Each cell is the mean over 10 subjects of a share (the subject's score averaged over 200 seeds; the fixed
+pair has no seeds). The relative gain is the boundary mean minus the baseline mean, divided by the baseline
+mean, so it compares average shares and not fault counts. The boundary suites have 8 cases:
 
 | score | baseline | baseline mean | boundary mean, 8 cases | relative gain (95% interval) |
 |---|---|---|---|---|
@@ -53,6 +55,8 @@ mutation score is 17.0% below 16 random cases.
   generated test is not scored here.
 - Ten subjects written for this repository, so the intervals are wide. The boundary generator reads only
   thresholds on a parameter; the cut-offs of `bmi_band` apply to a derived value, so it cannot target them.
+  It has 4 boundary candidates, so its 8-case boundary suite is those 4 plus 4 random cases; the other nine
+  subjects have 8 or more candidates.
 - The generators are rules, not language models.
 
 ## Run it
@@ -62,7 +66,7 @@ tests need a package.
 
 ```
 python -m pip install -r requirements-dev.txt
-python -m pytest -q            # 72 tests, about 12 seconds
+python -m pytest -q            # 72 tests, about 20 seconds
 python -m gts.experiment       # rewrites results/
 python -m gts.experiment --check   # fails if results/ no longer matches the code
 ```
