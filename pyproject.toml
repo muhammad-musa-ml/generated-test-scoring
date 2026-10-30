@@ -1,0 +1,9 @@
+[project]
+name = "generated-test-scoring"
+version = "0.1.0"
+description = "Score generated test suites against seeded faults, with the baseline stated"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
