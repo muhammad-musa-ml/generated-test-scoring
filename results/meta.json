@@ -1,0 +1,62 @@
+{
+  "baseline_factor": 4,
+  "budgets": [
+    4,
+    8,
+    16
+  ],
+  "mutants": {
+    "bmi_band": {
+      "domain_size": 11011,
+      "equivalent": 0,
+      "killable": 13
+    },
+    "clamp5": {
+      "domain_size": 41,
+      "equivalent": 4,
+      "killable": 6
+    },
+    "discount": {
+      "domain_size": 122,
+      "equivalent": 0,
+      "killable": 15
+    },
+    "grade": {
+      "domain_size": 101,
+      "equivalent": 0,
+      "killable": 12
+    },
+    "late_fee": {
+      "domain_size": 861,
+      "equivalent": 3,
+      "killable": 13
+    },
+    "leap_year": {
+      "domain_size": 800,
+      "equivalent": 0,
+      "killable": 17
+    },
+    "password_ok": {
+      "domain_size": 155,
+      "equivalent": 0,
+      "killable": 12
+    },
+    "seat_price": {
+      "domain_size": 4848,
+      "equivalent": 0,
+      "killable": 19
+    },
+    "shipping_fee": {
+      "domain_size": 122,
+      "equivalent": 2,
+      "killable": 20
+    },
+    "tax_band": {
+      "domain_size": 201,
+      "equivalent": 9,
+      "killable": 23
+    }
+  },
+  "seeds": 200,
+  "subjects": 10
+}
