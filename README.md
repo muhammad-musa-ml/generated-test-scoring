@@ -34,12 +34,12 @@ mean, so it compares average shares and not fault counts. The boundary suites ha
 
 | score | baseline | baseline mean | boundary mean, 8 cases | relative gain (95% interval) |
 |---|---|---|---|---|
-| mutation score | random, 8 cases | 0.519 | 0.731 | +40.9% (21.1 to 72.6) |
-| mutation score | random, 32 cases | 0.708 | 0.731 | +3.2% (-13.1 to 21.6) |
-| mutation score | two fixed cases (min and max) | 0.370 | 0.731 | +97.5% (59.7 to 178.9) |
-| useful-case rate | random, 8 cases | 0.809 | 0.824 | +1.8% (-10.1 to 21.1) |
-| useful-case rate | random, 32 cases | 0.810 | 0.824 | +1.8% (-10.1 to 21.2) |
-| useful-case rate | two fixed cases (min and max) | 0.800 | 0.824 | +3.0% (-15.8 to 35.0) |
+| mutation score | random, 8 cases | 0.5188 | 0.7310 | +40.9% (21.1 to 72.6) |
+| mutation score | random, 32 cases | 0.7080 | 0.7310 | +3.2% (-13.1 to 21.6) |
+| mutation score | two fixed cases (min and max) | 0.3702 | 0.7310 | +97.5% (59.7 to 178.9) |
+| useful-case rate | random, 8 cases | 0.8090 | 0.8239 | +1.8% (-10.1 to 21.1) |
+| useful-case rate | random, 32 cases | 0.8095 | 0.8239 | +1.8% (-10.1 to 21.2) |
+| useful-case rate | two fixed cases (min and max) | 0.8000 | 0.8239 | +3.0% (-15.8 to 35.0) |
 
 The same 8 boundary cases are about twice as good as two fixed cases (min and max), 41% better than 8 random
 cases, 3% better than 32 random cases (an interval that includes zero), and 2% better on the share of
